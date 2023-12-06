@@ -138,7 +138,7 @@ const Skills = () => {
                         </dl>
                     ))}
 
-                    <h3 class="font-bold text-xl mb-2">Frameworks</h3>
+                    <h3 class="font-bold text-xl mb-2 mt-8">Frameworks</h3>
 
                     {frameworks.map((framework, index) => (
                         <dl key={index} class="group flex block justify-between">
@@ -164,7 +164,7 @@ const Skills = () => {
 
                 <div class="leading-loose">
 
-                    <h3 class="font-bold text-xl mb-2 mt-8">CI/CD</h3>
+                    <h3 class="font-bold text-xl mb-2">CI/CD</h3>
 
                     {cicd.map((cicd, index) => (
                         <dl key={index} class="group flex block justify-between">
