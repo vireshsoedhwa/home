@@ -66,6 +66,37 @@ const Skills = () => {
     ]
 
 
+    const cicd = [
+        {
+            name: 'Kubernetes',
+            level: 5
+        },
+        {
+            name: 'GitLabCI',
+            level: 5
+        },
+        {
+            name: 'FluxCD',
+            level: 5
+        },
+    ]
+
+    const others = [
+        {
+            name: 'GitLab',
+            level: 5
+        },
+        {
+            name: 'Docker',
+            level: 5
+        },
+        {
+            name: 'Jira',
+            level: 4
+        }
+    ]
+
+
     return (
         <section id="abilities" class=" pt-5">
             <div class="container grid md:grid-cols-6 gap-8 items-center">
@@ -84,6 +115,7 @@ const Skills = () => {
 
 
             <div class="py-8 px-6 md:px-16 grid md:grid-cols-2 gap-16">
+
                 <div class="leading-loose">
                     <h3 class="font-bold text-xl mb-2">Programming</h3>
 
@@ -106,10 +138,6 @@ const Skills = () => {
                         </dl>
                     ))}
 
-                </div>
-
-
-                <div class="leading-loose">
                     <h3 class="font-bold text-xl mb-2">Frameworks</h3>
 
                     {frameworks.map((framework, index) => (
@@ -131,8 +159,55 @@ const Skills = () => {
                         </dl>
                     ))}
 
+                </div>
 
-                    <h3 class="font-bold text-xl mb-2 mt-8">Tools / Others</h3>
+
+                <div class="leading-loose">
+
+                    <h3 class="font-bold text-xl mb-2 mt-8">CI/CD</h3>
+
+                    {cicd.map((cicd, index) => (
+                        <dl key={index} class="group flex block justify-between">
+                            <dt class="group-hover:font-semibold">{cicd.name}</dt>
+                            <dd class="shrink-0">
+                                <ul class="flex flex-row">
+                                    {Array.from({ length: 5 }, (_, index) => (
+                                        <li key={index} class="inline-flex items-center">
+                                            {(index < cicd.level) ?
+                                                <StarSolid className="h-6 w-6 text-blue-500 group-hover:text-yellow-400" />
+                                                :
+                                                <StarOutline className="h-6 w-6 text-blue-500" />
+                                            }
+                                        </li>
+                                    ))}
+                                </ul>
+                            </dd>
+                        </dl>
+                    ))}
+
+
+                    <h3 class="font-bold text-xl mb-2 mt-8">Misc</h3>
+
+
+                    {others.map((others, index) => (
+                        <dl key={index} class="group flex block justify-between">
+                            <dt class="group-hover:font-semibold">{others.name}</dt>
+                            <dd class="shrink-0">
+                                <ul class="flex flex-row">
+                                    {Array.from({ length: 5 }, (_, index) => (
+                                        <li key={index} class="inline-flex items-center">
+                                            {(index < others.level) ?
+                                                <StarSolid className="h-6 w-6 text-blue-500 group-hover:text-yellow-400" />
+                                                :
+                                                <StarOutline className="h-6 w-6 text-blue-500" />
+                                            }
+                                        </li>
+                                    ))}
+                                </ul>
+                            </dd>
+                        </dl>
+                    ))}
+
 
                 </div>
 

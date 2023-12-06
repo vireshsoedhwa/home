@@ -50,7 +50,7 @@ const Education = () => {
 
 
                 {education.map((exp, index) => (
-                    <div class="container grid md:grid-cols-3 gap-4 md:gap-8 mb-16">
+                    <div key={index} class="container grid md:grid-cols-3 gap-4 md:gap-8 mb-16">
                         <div class="pl-12 md:pl-0 md:text-right md:leading-loose uppercase text-gray-500">{exp.date}</div>
                         <div class="pl-12 md:col-span-2 relative">
                             <div class="rounded-full bg-white border-2 border-gray-300 w-5 h-5 absolute mt-1.5 -ml-12">

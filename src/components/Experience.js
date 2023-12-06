@@ -21,7 +21,27 @@ const Experience = () => {
             date: 'Sept 2020 - Nov 2019',
             location: 'Burnaby',
             website: 'bcit.ca',
-            description: "As the Multimedia Developer at BCIT, I was tasked with modernizing and future-proofing legacy multimedia applications by converting to a modern standard. I gained valuable experience while reverse-engineering applications with limited available documentation available.",
+            description: "As the Multimedia Developer at BCIT, I was tasked with modernizing and future-proofing legacy multimedia applications by converting to a modern standard. I gained valuable experience while reverse-engineering applications.",
+        },
+        {
+            title: 'Network Engineer Internship @ Columbus Networks (fulltime)',
+            company: 'Columbus Networks',
+            department: 'Network Operations Center',
+            division: 'Junior Network Engineer',
+            date: 'Dec 2014 - Mar 2013',
+            location: 'Netherlands Antilles',
+            website: 'www.e-commercepark.com/',
+            description: "Provide support in network and server installation/troubleshooting and network/server configuration. Installed the NFSEN network monitoring system, which became a powerful tool in the company for detecting DDos attack origins and netflow."
+        },
+        {
+            title: 'Research Internship @ DCANSP (fulltime)',
+            company: 'Dutch Caribbean Air Navigation Service Provider',
+            department: 'Air Traffic Control Radar Technician',
+            division: 'Control Tower',
+            date: 'Mar 2013 - Oct 2012',
+            location: 'Netherlands Antilles',
+            website: 'dc-ansp.org',
+            description: "Perform simulation of Doppler effect on the ADS-B signal for the purpose of tracking high velocity aircrafts. Set up a measurement and simulation system using software defined radio to determine the robustness of aircraft navigation."
         },
     ];
 
@@ -47,20 +67,24 @@ const Experience = () => {
                 </div>
 
                 {experiences.map((exp, index) => (
-                    <div class="container grid md:grid-cols-3 gap-4 md:gap-8 mb-16">
+                    <div key={index} class="container grid md:grid-cols-3 gap-4 md:gap-8 mb-16">
                         <div class="pl-12 md:pl-0 md:text-right md:leading-loose uppercase text-gray-500">{exp.date}</div>
                         <div class="pl-12 md:col-span-2 relative">
                             <div class="rounded-full bg-white border-2 border-gray-300 w-5 h-5 absolute mt-1.5 -ml-12">
                             </div><h3 class="font-bold text-xl">{exp.title}</h3>
+
+                            <p class="text-sm text-gray-500">
+                                {exp.location}
+                            </p>
+
                             <p class="text-sm text-gray-500">
                                 {exp.department}
                                 &nbsp; | &nbsp;
                                 {exp.division}
                             </p>
+
                             <p class="text-sm text-gray-500">
                                 <span>
-                                    {exp.location}
-                                    &nbsp; | &nbsp;
                                     {exp.company}
                                     &nbsp; | &nbsp;
                                     <a class="text-blue-400" href={"https://" + exp.website} target="_blank">{exp.website}</a>
