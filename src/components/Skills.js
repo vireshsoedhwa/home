@@ -65,7 +65,7 @@ const Skills = () => {
 
 
     return (
-        <section id="abilities" class="min-h-screen pt-5">
+        <section id="abilities" class=" pt-5">
             <div class="container grid md:grid-cols-6 gap-8 items-center">
                 <div class="md:col-start-3 md:col-span-4">
                     <h2 class="inline-block bg-yellow-400 py-2 px-4 md:-ml-4 mb-2 text-lg font-bold uppercase skew-x-12">

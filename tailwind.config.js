@@ -15,7 +15,12 @@ module.exports = {
             'serif': ['ui-serif', 'Georgia'],
             'mono': ['ui-monospace', 'SFMono-Regular']
         },
-        extend: {},
+        extend: {
+            // spacing: {
+            //     '112': '28rem',
+            //     '128': '32rem',
+            // }
+        },
         container: {
             padding: '1.5rem',
             center: true,

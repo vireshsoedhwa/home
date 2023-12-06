@@ -27,7 +27,7 @@ const Experience = () => {
 
 
     return (
-        <section id="careers" class="min-h-screen pt-5">
+        <section id="careers" class=" pt-1">
 
             <div class="relative pb-5">
 
