@@ -44,7 +44,7 @@ const Education = () => {
 
                 <div class="container grid md:grid-cols-3 gap-8 items-center mb-4">
                     <div class="md:col-start-2 md:col-span-2">
-                        <h2 class="inline-block bg-yellow-400 py-2 px-4 md:-ml-4 mb-4 text-xl font-motorstencil font-bold uppercase skew-x-12">Education</h2>
+                        <h2 class="inline-block bg-yellow-400 py-2 px-4 md:-ml-4 mb-4 text-4xl font-motorstencil uppercase skew-x-12">Education</h2>
                     </div>
                 </div>
 
@@ -55,15 +55,21 @@ const Education = () => {
                         <div class="pl-12 md:col-span-2 relative">
                             <div class="rounded-full bg-white border-2 border-gray-300 w-5 h-5 absolute mt-1.5 -ml-12">
                             </div><h3 class="font-bold text-xl">{exp.title}</h3>
+
                             <p class="text-sm text-gray-500">
                                 {exp.location}
-                                <span>
-                                    &nbsp; | &nbsp;
-                                    {exp.school}
-                                    &nbsp; | &nbsp;
-                                    <a class="text-blue-400" href={"https://" + exp.website} target="_blank" rel="noreferrer">{exp.website}</a>
-                                </span>
                             </p>
+
+                            <p class="text-sm text-gray-500">
+                                {exp.school}
+                            </p>
+
+                            <p class="text-sm text-gray-500">
+                                <a class="text-blue-400" href={"https://" + exp.website} target="_blank" rel="noreferrer">{exp.website}</a>
+
+                            </p>
+
+
                             <p class="mt-6">
                                 {exp.description}
                             </p>

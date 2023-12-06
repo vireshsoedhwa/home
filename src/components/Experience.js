@@ -30,7 +30,7 @@ const Experience = () => {
             division: 'Junior Network Engineer',
             date: 'Dec 2014 - Mar 2013',
             location: 'Netherlands Antilles',
-            website: 'www.e-commercepark.com/',
+            website: 'www.e-commercepark.com',
             description: "Provide support in network and server installation/troubleshooting and network/server configuration. Installed the NFSEN network monitoring system, which became a powerful tool in the company for detecting DDos attack origins and netflow."
         },
         {
@@ -62,7 +62,7 @@ const Experience = () => {
 
                 <div class="container grid md:grid-cols-3 gap-8 items-center mb-4">
                     <div class="md:col-start-2 md:col-span-2">
-                        <h2 class="inline-block bg-yellow-400 py-2 px-4 md:-ml-4 mb-4 text-xl font-motorstencil font-bold uppercase skew-x-12">Career</h2>
+                        <h2 class="inline-block bg-yellow-400 py-2 px-4 md:-ml-4 mb-4 text-4xl font-motorstencil uppercase skew-x-12">Career</h2>
                     </div>
                 </div>
 
@@ -79,17 +79,24 @@ const Experience = () => {
 
                             <p class="text-sm text-gray-500">
                                 {exp.department}
-                                &nbsp; | &nbsp;
+                            </p>
+
+                            <p class="text-sm text-gray-500">
                                 {exp.division}
                             </p>
 
                             <p class="text-sm text-gray-500">
                                 <span>
                                     {exp.company}
-                                    &nbsp; | &nbsp;
+                                </span>
+                            </p>
+
+                            <p class="text-sm text-gray-500">
+                                <span>
                                     <a class="text-blue-400" href={"https://" + exp.website} target="_blank" rel="noreferrer">{exp.website}</a>
                                 </span>
                             </p>
+
                             <p class="mt-6">
                                 {exp.description}
                             </p>
