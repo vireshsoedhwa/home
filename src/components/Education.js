@@ -44,7 +44,7 @@ const Education = () => {
 
                 <div class="container grid md:grid-cols-3 gap-8 items-center mb-4">
                     <div class="md:col-start-2 md:col-span-2">
-                        <h2 class="inline-block bg-yellow-400 py-2 px-4 md:-ml-4 mb-4 text-lg font-bold uppercase skew-x-12">Education</h2>
+                        <h2 class="inline-block bg-yellow-400 py-2 px-4 md:-ml-4 mb-4 text-xl font-motorstencil font-bold uppercase skew-x-12">Education</h2>
                     </div>
                 </div>
 
@@ -61,7 +61,7 @@ const Education = () => {
                                     &nbsp; | &nbsp;
                                     {exp.school}
                                     &nbsp; | &nbsp;
-                                    <a class="text-blue-400" href={"https://" + exp.website} target="_blank">{exp.website}</a>
+                                    <a class="text-blue-400" href={"https://" + exp.website} target="_blank" rel="noreferrer">{exp.website}</a>
                                 </span>
                             </p>
                             <p class="mt-6">
