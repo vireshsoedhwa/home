@@ -3,6 +3,8 @@ import React from 'react';
 import { BeakerIcon as BeakerSolid } from '@heroicons/react/24/solid';
 import { BeakerIcon as BeakerOutline } from '@heroicons/react/24/outline';
 
+import { StarIcon as StarSolid } from '@heroicons/react/24/solid';
+import { StarIcon as StarOutline } from '@heroicons/react/24/outline';
 
 const Skills = () => {
     const programming = [
@@ -118,9 +120,9 @@ const Skills = () => {
                                     {Array.from({ length: 5 }, (_, index) => (
                                         <li key={index} class="inline-flex items-center">
                                             {(index < framework.level) ?
-                                                <BeakerSolid className="h-6 w-6 text-blue-500 group-hover:text-yellow-400" />
+                                                <StarSolid className="h-6 w-6 text-blue-500 group-hover:text-yellow-400" />
                                                 :
-                                                <BeakerOutline className="h-6 w-6 text-blue-500" />
+                                                <StarOutline className="h-6 w-6 text-blue-500" />
                                             }
                                         </li>
                                     ))}

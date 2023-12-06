@@ -12,7 +12,7 @@ const About = () => {
                 <div class="introduction md:col-span-2">
                     <h2 class="inline-block bg-amber-400 py-2 px-4 md:-ml-4 mb-4 text-lg font-bold uppercase skew-x-12">About me</h2>
                     <p class="text-lg leading-loose">
-                        Hi, my name is <strong>Viresh Soedhwa</strong>, I'm a software engineer from Vancouver, BC, Canada.
+                        Hi, my name is <strong>Viresh Soedhwa</strong>, I'm a software engineer based in Vancouver, BC, Canada.
                         Working with diverse teams and projects, I became proficient in a range of technologies and frameworks such as <strong>Django</strong>, <strong>Laravel</strong> and <strong>NodeJS/Express</strong>.
                         I have developed frontend applicatons using <strong>React</strong>, and CSS frameworks such as <strong>MaterialUI</strong>.
                     </p>

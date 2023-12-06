@@ -31,7 +31,7 @@ const Education = () => {
     ];
 
     return (
-        <section id="education" class="min-h-screen pt-5">
+        <section id="education" class=" pt-5">
             <div class="relative pb-5">
                 <div class="absolute inset-0">
                     <div class="container grid md:grid-cols-3 gap-8 items-center h-full">

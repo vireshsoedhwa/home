@@ -16,7 +16,20 @@ function App() {
         <Education />
         <Skills />
 
-        
+
+        <div class="container grid md:grid-cols-6 gap-8 items-center">
+          <div class="md:col-start-3 md:col-span-4">
+            <h2 class="inline-block bg-yellow-400 py-2 px-4 md:-ml-4 mb-2 text-lg font-bold uppercase skew-x-12">
+              more coming soon
+            </h2>
+          </div>
+          <div class="md:col-start-2 md:col-span-4">
+            <p class="ml-px text-xl text-gray-500">
+              ...
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   );
