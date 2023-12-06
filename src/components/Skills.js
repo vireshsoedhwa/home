@@ -88,7 +88,7 @@ const Skills = () => {
                     <h3 class="font-bold text-xl mb-2">Programming</h3>
 
                     {programming.map((prog, index) => (
-                        <dl class="group flex block justify-between">
+                        <dl key={index} class="group flex block justify-between">
                             <dt class="group-hover:font-semibold">{prog.language}</dt>
                             <dd class="shrink-0">
                                 <ul class="flex flex-row">
@@ -113,7 +113,7 @@ const Skills = () => {
                     <h3 class="font-bold text-xl mb-2">Frameworks</h3>
 
                     {frameworks.map((framework, index) => (
-                        <dl class="group flex block justify-between">
+                        <dl key={index} class="group flex block justify-between">
                             <dt class="group-hover:font-semibold">{framework.name}</dt>
                             <dd class="shrink-0">
                                 <ul class="flex flex-row">
