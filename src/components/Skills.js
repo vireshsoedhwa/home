@@ -6,6 +6,12 @@ import { BeakerIcon as BeakerOutline } from '@heroicons/react/24/outline';
 import { StarIcon as StarSolid } from '@heroicons/react/24/solid';
 import { StarIcon as StarOutline } from '@heroicons/react/24/outline';
 
+import { CubeIcon as CubeSolid } from '@heroicons/react/24/solid';
+import { CubeIcon as CubeOutline } from '@heroicons/react/24/outline';
+
+import { RocketLaunchIcon as RocketSolid } from '@heroicons/react/24/solid';
+import { RocketLaunchIcon as RocketOutline } from '@heroicons/react/24/outline';
+
 const Skills = () => {
     const programming = [
         {
@@ -79,6 +85,10 @@ const Skills = () => {
             name: 'FluxCD',
             level: 5
         },
+        {
+            name: 'WeaveGitOps',
+            level: 3
+        },
     ]
 
     const others = [
@@ -148,9 +158,9 @@ const Skills = () => {
                                     {Array.from({ length: 5 }, (_, index) => (
                                         <li key={index} class="inline-flex items-center">
                                             {(index < framework.level) ?
-                                                <StarSolid className="h-6 w-6 text-blue-500 group-hover:text-yellow-400" />
+                                                <RocketSolid className="h-6 w-6 text-blue-500 group-hover:text-yellow-400" />
                                                 :
-                                                <StarOutline className="h-6 w-6 text-blue-500" />
+                                                <RocketOutline className="h-6 w-6 text-blue-500" />
                                             }
                                         </li>
                                     ))}
@@ -174,9 +184,9 @@ const Skills = () => {
                                     {Array.from({ length: 5 }, (_, index) => (
                                         <li key={index} class="inline-flex items-center">
                                             {(index < cicd.level) ?
-                                                <StarSolid className="h-6 w-6 text-blue-500 group-hover:text-yellow-400" />
+                                                <CubeSolid className="h-6 w-6 text-blue-500 group-hover:text-yellow-400" />
                                                 :
-                                                <StarOutline className="h-6 w-6 text-blue-500" />
+                                                <CubeOutline className="h-6 w-6 text-blue-500" />
                                             }
                                         </li>
                                     ))}
