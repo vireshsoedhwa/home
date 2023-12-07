@@ -39,6 +39,10 @@ const Skills = () => {
             level: 4
         },
         {
+            language: 'Bash',
+            level: 4
+        },
+        {
             language: 'Java',
             level: 3
         },
@@ -76,7 +80,7 @@ const Skills = () => {
     ]
 
 
-    const cicd = [
+    const infra = [
         {
             name: 'Kubernetes',
             level: 5
@@ -99,7 +103,26 @@ const Skills = () => {
         },
     ]
 
-    const others = [
+    const tech = [
+        {
+            name: 'RestAPI',
+            level: 5
+        },
+        {
+            name: 'Websockets',
+            level: 4
+        },
+        {
+            name: 'SAML',
+            level: 4
+        },  
+        {
+            name: 'LDAP',
+            level: 3
+        },  
+    ]
+
+    const misc = [
         {
             name: 'GitLab',
             level: 5
@@ -107,6 +130,10 @@ const Skills = () => {
         {
             name: 'Docker',
             level: 5
+        },
+        {
+            name: 'VSCode',
+            level: 4
         },
         {
             name: 'Jira',
@@ -184,14 +211,14 @@ const Skills = () => {
 
                     <h3 class="font-bold text-xl mb-2">Infrastructure & CI/CD</h3>
 
-                    {cicd.map((cicd, index) => (
+                    {infra.map((infra, index) => (
                         <dl key={index} class="group flex block justify-between">
-                            <dt class="group-hover:font-semibold">{cicd.name}</dt>
+                            <dt class="group-hover:font-semibold">{infra.name}</dt>
                             <dd class="shrink-0">
                                 <ul class="flex flex-row">
                                     {Array.from({ length: 5 }, (_, index) => (
                                         <li key={index} class="inline-flex items-center">
-                                            {(index < cicd.level) ?
+                                            {(index < infra.level) ?
                                                 <CubeSolid className="h-6 w-6 text-blue-500 group-hover:text-yellow-400" />
                                                 :
                                                 <CubeOutline className="h-6 w-6 text-blue-500" />
@@ -204,17 +231,43 @@ const Skills = () => {
                     ))}
 
 
-                    <h3 class="font-bold text-xl mb-2 mt-8">Misc</h3>
+
+                    <h3 class="font-bold text-xl mb-2 mt-8">Technologies</h3>
 
 
-                    {others.map((others, index) => (
+                    {tech.map((tech, index) => (
                         <dl key={index} class="group flex block justify-between">
-                            <dt class="group-hover:font-semibold">{others.name}</dt>
+                            <dt class="group-hover:font-semibold">{tech.name}</dt>
                             <dd class="shrink-0">
                                 <ul class="flex flex-row">
                                     {Array.from({ length: 5 }, (_, index) => (
                                         <li key={index} class="inline-flex items-center">
-                                            {(index < others.level) ?
+                                            {(index < tech.level) ?
+                                                <StarSolid className="h-6 w-6 text-blue-500 group-hover:text-yellow-400" />
+                                                :
+                                                <StarOutline className="h-6 w-6 text-blue-500" />
+                                            }
+                                        </li>
+                                    ))}
+                                </ul>
+                            </dd>
+                        </dl>
+                    ))}
+
+
+
+
+                    <h3 class="font-bold text-xl mb-2 mt-8">Misc</h3>
+
+
+                    {misc.map((misc, index) => (
+                        <dl key={index} class="group flex block justify-between">
+                            <dt class="group-hover:font-semibold">{misc.name}</dt>
+                            <dd class="shrink-0">
+                                <ul class="flex flex-row">
+                                    {Array.from({ length: 5 }, (_, index) => (
+                                        <li key={index} class="inline-flex items-center">
+                                            {(index < misc.level) ?
                                                 <StarSolid className="h-6 w-6 text-blue-500 group-hover:text-yellow-400" />
                                                 :
                                                 <StarOutline className="h-6 w-6 text-blue-500" />

@@ -14,7 +14,7 @@ const About = () => {
                     <p class="text-lg leading-loose">
                         Hi, my name is <strong>Viresh Soedhwa</strong>, I'm a software engineer based in Vancouver, BC, Canada.
                         Working with diverse teams and projects, I became proficient in a range of technologies and frameworks such as <strong>Django</strong>, <strong>Laravel</strong> and <strong>NodeJS/Express</strong>.
-                        I have developed frontend applicatons using <strong>React</strong>, and CSS frameworks such as <strong>MaterialUI</strong>.
+                        I have developed frontend applicatons using <strong>React</strong>, and <strong>CSS</strong> frameworks such as <strong>MaterialUI</strong> and <strong>TailwindJS</strong>. Infrastructure technologies such as <strong>Kubernetes</strong>, and <strong>CI/CD</strong> pipelines are part of my daily workflow.
                     </p>
                 </div>
             </div>
