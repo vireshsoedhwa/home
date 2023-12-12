@@ -1,7 +1,7 @@
 // src/components/Header.js
 import React from 'react';
 // import { useSpring, animated } from 'react-spring';
-import headerbg from './headerbg.png';
+import headerbg from './phone30.png';
 
 const Header = () => {
     // const props = useSpring({
