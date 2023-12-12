@@ -77,6 +77,10 @@ const Skills = () => {
             name: 'Vuejs',
             level: 3
         },
+        {
+            name: 'Tailwind',
+            level: 3
+        },
     ]
 
 
@@ -91,11 +95,11 @@ const Skills = () => {
         },
         {
             name: 'GitLabCI',
-            level: 5
+            level: 4
         },
         {
             name: 'FluxCD',
-            level: 5
+            level: 4
         },
         {
             name: 'WeaveGitOps',
@@ -138,6 +142,10 @@ const Skills = () => {
         {
             name: 'Jira',
             level: 4
+        },
+        {
+            name: 'Figma',
+            level: 3
         }
     ]
 

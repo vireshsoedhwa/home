@@ -11,7 +11,7 @@ import linkedin from './linkedin.svg';
 
 function App() {
   return (
-    <div className="flex flex-col bg-amber-400">
+    <div className="flex flex-col bg-yellow-400">
       <Header />
       <div className="relative bg-white z-10">
         <About />
