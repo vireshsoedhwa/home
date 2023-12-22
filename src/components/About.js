@@ -7,7 +7,7 @@ const About = () => {
         <section id="about-me" class="flex flex-col items-center justify-center min-h-screen py-16">
             <div class="container grid md:grid-cols-3 gap-8 items-center">
                 <div class="avatar px-12 md:px-0">
-                    <img class="rounded-full" alt="My avatar" src="https://media.licdn.com/dms/image/D5603AQFjLxZ13qONxQ/profile-displayphoto-shrink_200_200/0/1701814344756?e=1707350400&v=beta&t=Y0euPvqtMjNcwWEbTksXUrWA0Zek-M85jBDQziJjdIA"></img>
+                    <img class="rounded-full" alt="My avatar" src="https://media.licdn.com/dms/image/D5603AQFjLxZ13qONxQ/profile-displayphoto-shrink_200_200/0/1701814344756?e=2147483647&v=beta&t=pa0faMmnnoODH-3A0n7g2kxPyH1B1D8M3Mo1hE9c6rs"></img>
                 </div>
                 <div class="introduction md:col-span-2">
                     <h2 class="inline-block bg-yellow-400 py-2 px-4 md:-ml-4 mb-4 text-4xl font-motorstencil uppercase skew-x-12">About me</h2>
