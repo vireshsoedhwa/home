@@ -18,7 +18,7 @@ const Header = () => {
         >
             <div className="md:ml-6 z-10 text-center">
                 <h1 className="text-7xl mb-2 tracking-wider font-motorstencil">Viresh Soedhwa</h1>
-                <p className="ml-px text-4xl text-black font-motorstencil">My Resume</p>
+                <p className="ml-px text-4xl text-black font-motorstencil">AI Agent Developer</p>
             </div>
         </section>
     );

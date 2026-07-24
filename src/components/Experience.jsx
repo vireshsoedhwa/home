@@ -9,7 +9,7 @@ const Experience = () => {
             date: 'Current - Sept 2020',
             location: 'Burnaby',
             website: 'bcit.ca',
-            description: "As the Developer at BCIT, I'm building web applications for the purpose of supporting and empowering students and instructors. Aditionally, I have also helped develop the most optimal development environment, to improve productivity of the developer while keeping the applications up to production standards.",
+            description: "Building API-driven web applications that support students and instructors at scale. Designed and maintained development environments with optimized feedback loops — the same pattern used in agent workbench architectures. Managed full deployment pipeline from development to production, ensuring reliability and observability of all applications.",
         },
         {
             title: 'Multimedia Developer @ BCIT (fulltime)',

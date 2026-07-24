@@ -49,6 +49,14 @@ const Skills = () => {
 
     const frameworks = [
         {
+            name: 'Nodejs',
+            level: 4
+        },
+        {
+            name: 'React',
+            level: 4
+        },
+        {
             name: 'Django',
             level: 5
         },
@@ -59,14 +67,6 @@ const Skills = () => {
         {
             name: 'Laravel',
             level: 5
-        },
-        {
-            name: 'Nodejs',
-            level: 4
-        },
-        {
-            name: 'React',
-            level: 4
         },
         {
             name: 'MaterialUI',
@@ -118,11 +118,11 @@ const Skills = () => {
         {
             name: 'SAML',
             level: 4
-        },  
+        },
         {
             name: 'LDAP',
             level: 3
-        },  
+        },
     ]
 
     const misc = [
@@ -159,7 +159,7 @@ const Skills = () => {
                 </div>
                 <div class="md:col-start-2 md:col-span-4">
                     <p class="ml-px text-xl text-gray-500">
-                        A summary of my skills and abilities as a Software Engineer
+                        A summary of my skills and abilities as an AI Agent Developer
                     </p>
                 </div>
             </div>
@@ -216,7 +216,7 @@ const Skills = () => {
 
                 <div class="leading-loose">
 
-                    <h3 class="font-bold text-xl mb-2">Infrastructure & CI/CD</h3>
+                    <h3 class="font-bold text-xl mb-2">Infrastructure & Deployment</h3>
 
                     {infra.map((infra, index) => (
                         <dl key={index} class="group flex block justify-between">
