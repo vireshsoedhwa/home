@@ -1,7 +1,24 @@
 /* src/index.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui;
+  --font-federalreg: "ltr-federal-bureau-12", sans-serif;
+  --font-federaldiag: "ltr-federal-bureau-12-diago", sans-serif;
+  --font-federalhor: "ltr-federal-bureau-12-horiz", sans-serif;
+  --font-ocr: "ocr-a-std", monospace;
+  --font-motor: "motor", monospace;
+  --font-motorstencil: "motor-stencil", sans-serif;
+  --font-serif: ui-serif, Georgia;
+  --font-mono: ui-monospace, SFMono-Regular;
+}
+
+@layer base {
+  .container {
+    padding: 1.5rem;
+    margin-inline: auto;
+  }
+}
 
 body {
   margin: 0;

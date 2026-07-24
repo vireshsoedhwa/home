@@ -1,5 +1,4 @@
 // src/components/Skills.js
-import React from 'react';
 import { BeakerIcon as BeakerSolid } from '@heroicons/react/24/solid';
 import { BeakerIcon as BeakerOutline } from '@heroicons/react/24/outline';
 
