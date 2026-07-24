@@ -1,6 +1,4 @@
 // src/components/Experience.js
-import React from 'react';
-
 const Education = () => {
 
     const education = [
