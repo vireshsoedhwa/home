@@ -10,9 +10,12 @@ const About = () => {
                 <div class="introduction md:col-span-2">
                     <h2 class="inline-block bg-yellow-400 py-2 px-4 md:-ml-4 mb-4 text-4xl font-motorstencil uppercase skew-x-12">About me</h2>
                     <p class="text-lg leading-loose">
-                        Hi, my name is <strong>Viresh Soedhwa</strong>, I'm a software engineer based in Vancouver, BC, Canada.
-                        Working with diverse teams and projects, I became proficient in a range of technologies and frameworks such as <strong>Django</strong>, <strong>Laravel</strong> and <strong>NodeJS/Express</strong>.
-                        I have developed frontend applicatons using <strong>React</strong>, and <strong>CSS</strong> frameworks such as <strong>MaterialUI</strong> and <strong>TailwindJS</strong>. Infrastructure technologies such as <strong>Kubernetes</strong>, and <strong>CI/CD</strong> pipelines are part of my daily workflow.
+                        Hi, my name is <strong>Viresh Soedhwa</strong>, I'm a software engineer based in Vancouver, BC, Canada,
+                        focused on building AI-driven agent systems. My background in API design with
+                        <strong> Django</strong> and <strong>NodeJS/Express</strong> translates directly to agent tool integration and
+                        function calling architectures. I build real-time, event-driven applications using <strong>Websockets</strong> 
+                        and <strong>React</strong>, and deploy them on <strong>Kubernetes</strong> with <strong>CI/CD</strong> pipelines
+                        &mdash; the same infrastructure patterns needed to run autonomous agents in production.
                     </p>
                 </div>
             </div>
