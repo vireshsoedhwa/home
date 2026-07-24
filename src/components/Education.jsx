@@ -3,6 +3,14 @@ const Education = () => {
 
     const education = [
         {
+            title: 'Master of Science in Big Data',
+            school: 'Simon Fraser University',
+            program: 'degree',
+            date: 'Sept 2025 - Dec 2026',
+            location: 'Burnaby, Canada',
+            website: 'www.sfu.ca'
+        },
+        {
             title: 'Bachelor of Science in Computing Science',
             school: 'Simon Fraser University',
             program: 'degree',
@@ -74,11 +82,6 @@ const Education = () => {
                         </div>
                     </div>
                 ))}
-
-
-
-
-
 
             </div>
 
