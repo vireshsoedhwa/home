@@ -18,6 +18,10 @@ const Skills = () => {
             level: 5
         },
         {
+            language: 'TypeScript',
+            level: 4
+        },
+        {
             language: 'Javascript',
             level: 5
         },
@@ -47,6 +51,37 @@ const Skills = () => {
         },
     ];
 
+    const aiml = [
+        {
+            name: 'LLM Engineering',
+            level: 3
+        },
+        {
+            name: 'Prompt Engineering',
+            level: 3
+        },
+        {
+            name: 'PyTorch',
+            level: 2
+        },
+        {
+            name: 'Transformers',
+            level: 2
+        },
+        {
+            name: 'RAG Pipelines',
+            level: 2
+        },
+        {
+            name: 'Tokenizers',
+            level: 2
+        },
+        {
+            name: 'Hugging Face',
+            level: 2
+        },
+    ]
+
     const frameworks = [
         {
             name: 'Nodejs',
@@ -54,6 +89,10 @@ const Skills = () => {
         },
         {
             name: 'React',
+            level: 4
+        },
+        {
+            name: 'Next.js',
             level: 4
         },
         {
@@ -73,15 +112,45 @@ const Skills = () => {
             level: 4
         },
         {
-            name: 'Vuejs',
+            name: 'Tailwind',
             level: 3
         },
         {
-            name: 'Tailwind',
+            name: 'Vuejs',
             level: 3
         },
     ]
 
+    const agentTools = [
+        {
+            name: 'Agent Loops',
+            level: 2
+        },
+        {
+            name: 'MCP Protocol',
+            level: 2
+        },
+        {
+            name: 'Function Calling',
+            level: 3
+        },
+        {
+            name: 'LangGraph',
+            level: 2
+        },
+        {
+            name: 'CrewAI',
+            level: 2
+        },
+        {
+            name: 'Tool Orchestration',
+            level: 2
+        },
+        {
+            name: 'Agent Observability',
+            level: 2
+        },
+    ]
 
     const infra = [
         {
@@ -127,12 +196,16 @@ const Skills = () => {
 
     const misc = [
         {
+            name: 'Docker',
+            level: 5
+        },
+        {
             name: 'GitLab',
             level: 5
         },
         {
-            name: 'Docker',
-            level: 5
+            name: 'Ollama',
+            level: 3
         },
         {
             name: 'VSCode',
@@ -190,7 +263,54 @@ const Skills = () => {
                         </dl>
                     ))}
 
-                    <h3 class="font-bold text-xl mb-2 mt-8">Frameworks</h3>
+                    <h3 class="font-bold text-xl mb-2 mt-8">AI & ML</h3>
+
+                    {aiml.map((item, index) => (
+                        <dl key={index} class="group flex block justify-between">
+                            <dt class="group-hover:font-semibold">{item.name}</dt>
+                            <dd class="shrink-0">
+                                <ul class="flex flex-row">
+                                    {Array.from({ length: 5 }, (_, index) => (
+                                        <li key={index} class="inline-flex items-center">
+                                            {(index < item.level) ?
+                                                <RocketSolid className="h-6 w-6 text-blue-500 group-hover:text-yellow-400" />
+                                                :
+                                                <RocketOutline className="h-6 w-6 text-blue-500" />
+                                            }
+                                        </li>
+                                    ))}
+                                </ul>
+                            </dd>
+                        </dl>
+                    ))}
+
+                    <h3 class="font-bold text-xl mb-2 mt-8">Agent Tools & Protocols</h3>
+
+                    {agentTools.map((item, index) => (
+                        <dl key={index} class="group flex block justify-between">
+                            <dt class="group-hover:font-semibold">{item.name}</dt>
+                            <dd class="shrink-0">
+                                <ul class="flex flex-row">
+                                    {Array.from({ length: 5 }, (_, index) => (
+                                        <li key={index} class="inline-flex items-center">
+                                            {(index < item.level) ?
+                                                <RocketSolid className="h-6 w-6 text-blue-500 group-hover:text-yellow-400" />
+                                                :
+                                                <RocketOutline className="h-6 w-6 text-blue-500" />
+                                            }
+                                        </li>
+                                    ))}
+                                </ul>
+                            </dd>
+                        </dl>
+                    ))}
+
+                </div>
+
+
+                <div class="leading-loose">
+
+                    <h3 class="font-bold text-xl mb-2">Frameworks</h3>
 
                     {frameworks.map((framework, index) => (
                         <dl key={index} class="group flex block justify-between">
@@ -211,12 +331,8 @@ const Skills = () => {
                         </dl>
                     ))}
 
-                </div>
 
-
-                <div class="leading-loose">
-
-                    <h3 class="font-bold text-xl mb-2">Infrastructure & Deployment</h3>
+                    <h3 class="font-bold text-xl mb-2 mt-8">Infrastructure & Deployment</h3>
 
                     {infra.map((infra, index) => (
                         <dl key={index} class="group flex block justify-between">
@@ -260,7 +376,6 @@ const Skills = () => {
                             </dd>
                         </dl>
                     ))}
-
 
 
 
